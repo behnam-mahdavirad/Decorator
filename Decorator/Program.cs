@@ -6,7 +6,11 @@ namespace Decorator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ConcreteComponent concrete = new ConcreteComponent();
+
+            concrete.Operation();
+
+            Console.ReadLine();
         }
     }
 }
