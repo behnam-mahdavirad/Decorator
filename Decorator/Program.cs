@@ -8,7 +8,10 @@ namespace Decorator
         {
             ConcreteComponent concrete = new ConcreteComponent();
 
-            concrete.Operation();
+            //concrete.Operation();
+
+            ConcreteDecorator concreteDecorator= new ConcreteDecorator(concrete);
+            concreteDecorator.Operation();
 
             Console.ReadLine();
         }
